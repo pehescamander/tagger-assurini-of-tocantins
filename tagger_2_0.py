@@ -97,8 +97,7 @@ patterns = [
 
 # aplicar parâmetros a lista e transformar em dicionário
 
-from nltk import RegexpTagger
-from nltk import nom_tagger
+import nltk
 
 nom_tagger = nltk.RegexpTagger(patterns)
 tags = nom_tagger.tag(set_list)
