@@ -10,8 +10,8 @@ Original file is located at
 # deixar todas as letras minúsculas
 
 file_name = 'TEST-SET.txt'
-uploaded[file_name].decode('utf-8')
-text = uploaded[file_name].decode('utf-8')
+[file_name].decode('utf-8')
+text = [file_name].decode('utf-8')
 text_lower = text.lower()
 
 # limpar o texto, remover pontuação
