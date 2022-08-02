@@ -20,7 +20,6 @@ text_lower = text.lower()
 
 # limpar o texto, remover pontuação
 
-import nltk
 import re
 text_clean = re.sub('[.;,-:!?—()]','',text_lower)
 with open('TEST-SET.txt', 'w', encoding='utf-8') as f:
@@ -97,6 +96,9 @@ patterns = [
 ]
 
 # aplicar parâmetros a lista e transformar em dicionário
+
+from nltk import RegexpTagger
+from nltk import nom_tagger
 
 nom_tagger = nltk.RegexpTagger(patterns)
 tags = nom_tagger.tag(set_list)
