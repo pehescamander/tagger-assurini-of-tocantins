@@ -9,9 +9,13 @@ Original file is located at
 
 # deixar todas as letras minúsculas
 
-file_name = 'TEST-SET.txt'
-[file_name].decode('utf-8')
-text = [file_name].decode('utf-8')
+def ler(nome_arq):
+  arquivo = open(nome_arq, 'r', encoding='utf-8')
+  conteudo_arq = arquivo.read()
+  arquivo.close()
+  return conteudo_arq
+
+text = ler('TEST-SET.txt')
 text_lower = text.lower()
 
 # limpar o texto, remover pontuação
